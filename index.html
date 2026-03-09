@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2024 Mercedes Sprinter AWD | Adventure Ready Campervan</title>
+  <meta name="description" content="Like-new 2024 Mercedes Sprinter 2500 AWD with professional custom build. 5,850 miles. Sleeps 4. Solar, diesel heat, full kitchen. Encinitas, CA. $139,900." />
+  <style>
+    /* =====================================================
+       COLORS — easy to tweak
+       ===================================================== */
+    :root {
+      --ocean:       #0b2e45;   /* deep navy */
+      --pacific:     #1a5e7a;   /* mid ocean blue */
+      --seafoam:     #4a9fa3;   /* teal accent */
+      --kelp:        #2d6a52;   /* deep sea green */
+      --sand:        #f0e2c0;   /* warm sand */
+      --driftwood:   #b8956a;   /* warm tan */
+      --coral:       #e07a5f;   /* sunset coral — primary CTA color */
+      --sunrise:     #f2a65a;   /* warm sunrise gold */
+      --cream:       #faf8f3;   /* off-white background */
+      --white:       #ffffff;
+      --dark:        #111820;   /* near-black */
+      --charcoal:    #243040;   /* dark blue-grey text */
+      --mid:         #4a6070;   /* secondary text */
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+    .hero {
+      min-height: 100svh;
+      background: linear-gradient(160deg,
+        #071828 0%,
+        #0b2e45 30%,
+        #124a6a 55%,
+        #1a7070 75%,
+        #c45c30 92%,
+        #e88a3a 100%
+      );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1.5rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 15% 85%, rgba(224,122,95,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 15%, rgba(74,159,163,0.15) 0%, transparent 55%);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 28%;
+      left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(224,122,95,0.9);
+      color: white;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.1rem;
+      border-radius: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      animation: fadeDown 0.6s ease both;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 8vw, 4rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      position: relative;
+      animation: fadeDown 0.7s 0.1s ease both;
+    }
+
+    .hero h1 span { color: var(--sunrise); }
+
+    .hero-sub {
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      color: rgba(255,255,255,0.68);
+      margin-top: 1rem;
+      max-width: 460px;
+      line-height: 1.55;
+      position: relative;
+      animation: fadeDown 0.7s 0.2s ease both;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      animation: fadeUp 0.7s 0.3s ease both;
+    }
+
+    .stat-pill {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(8px);
+      border-radius: 3rem;
+      padding: 0.55rem 1.1rem;
+      color: white;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .stat-pill span { color: var(--sunrise); }
+
+    .hero-price {
+      margin-top: 2rem;
+      position: relative;
+      animation: fadeUp 0.7s 0.4s ease both;
+    }
+
+    .price-tag {
+      font-size: clamp(2.8rem, 10vw, 4.8rem);
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    .price-note {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 0.2rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 0.9rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      animation: fadeUp 0.7s 0.5s ease both;
+    }
+
+    .btn-primary {
+      background: var(--coral);
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2.1rem;
+      border-radius: 3rem;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 22px rgba(224,122,95,0.45);
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(224,122,95,0.55); }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      border: 1.5px solid rgba(255,255,255,0.28);
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2.1rem;
+      border-radius: 3rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+
+    .btn-secondary:hover { background: rgba(255,255,255,0.18); }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.35);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      animation: fadeIn 1s 1.2s both;
+    }
+
+    .scroll-arrow {
+      width: 1px;
+      height: 28px;
+      background: rgba(255,255,255,0.2);
+      animation: scrollPulse 1.6s 1.8s infinite;
+    }
+
+    /* =====================================================
+       MARQUEE STRIP
+       ===================================================== */
+    .adventure-strip {
+      background: var(--seafoam);
+      padding: 0.9rem;
+      overflow: hidden;
+    }
+
+    .strip-inner {
+      display: flex;
+      gap: 2.5rem;
+      animation: marquee 22s linear infinite;
+      white-space: nowrap;
+    }
+
+    .strip-item {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.92);
+      flex-shrink: 0;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* =====================================================
+       QUICK STATS BAR
+       ===================================================== */
+    .quick-wins {
+      background: var(--kelp);
+      padding: 2.5rem 1.5rem;
+    }
+
+    .quick-wins-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 480px) {
+      .quick-wins-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .qw-item { text-align: center; color: white; padding: 1rem 0.5rem; }
+    .qw-icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+    .qw-label { font-size: 0.7rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.2rem; }
+    .qw-value { font-size: 0.92rem; font-weight: 700; color: var(--sand); }
+
+    /* =====================================================
+       SHARED SECTION STYLES
+       ===================================================== */
+    section { padding: 4rem 1.5rem; }
+    .section-inner { max-width: 680px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--seafoam);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 5vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--charcoal);
+      margin-bottom: 1.1rem;
+    }
+
+    .section-body {
+      font-size: 1rem;
+      line-height: 1.72;
+      color: var(--mid);
+    }
+
+    /* =====================================================
+       STORY / ABOUT
+       ===================================================== */
+    .about-section { background: var(--cream); }
+
+    .highlight-block {
+      background: linear-gradient(135deg, var(--ocean), #0d3d5a);
+      border-radius: 1.4rem;
+      padding: 2rem 2rem 1.8rem;
+      color: white;
+      margin-top: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highlight-block::before {
+      content: '"';
+      position: absolute;
+      top: -1.2rem;
+      left: 1rem;
+      font-size: 8rem;
+      color: rgba(255,255,255,0.05);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .highlight-block p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.82);
+      position: relative;
+    }
+
+    .highlight-block .attribution {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: var(--sunrise);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    /* =====================================================
+       FEATURE CARDS
+       ===================================================== */
+    .features-section { background: var(--white); }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 480px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .feature-card {
+      background: var(--cream);
+      border-radius: 1.2rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    }
+
+    .card-icon { font-size: 1.9rem; margin-bottom: 0.8rem; }
+    .card-title { font-size: 1rem; font-weight: 700; color: var(--charcoal); margin-bottom: 0.4rem; }
+    .card-body { font-size: 0.875rem; color: var(--mid); line-height: 1.6; }
+
+    /* =====================================================
+       SYSTEMS DEEP DIVE
+       ===================================================== */
+    .systems-section { background: var(--ocean); }
+    .systems-section .section-title { color: white; }
+    .systems-section .section-label { color: var(--sunrise); }
+
+    .systems-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 480px) {
+      .systems-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .system-block {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 1rem;
+      padding: 1.4rem;
+    }
+
+    .system-block h3 {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--sunrise);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.8rem;
+    }
+
+    .system-block ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .system-block li {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.72);
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .system-block li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--seafoam);
+      font-size: 0.78rem;
+    }
+
+    /* =====================================================
+       DRIVER ASSIST TAGS
+       ===================================================== */
+    .assist-section { background: var(--cream); }
+
+    .assist-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+    }
+
+    .assist-tag {
+      background: white;
+      border: 1px solid rgba(74,159,163,0.25);
+      border-radius: 2rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--charcoal);
+    }
+
+    /* =====================================================
+       SPECS TABLE
+       ===================================================== */
+    .specs-section { background: var(--white); }
+
+    .specs-list {
+      margin-top: 1.5rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.07);
+    }
+
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 1.2rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      gap: 1rem;
+    }
+
+    .spec-row:last-child { border-bottom: none; }
+    .spec-row:nth-child(even) { background: var(--cream); }
+
+    .spec-key { font-size: 0.85rem; color: var(--mid); flex-shrink: 0; }
+    .spec-val { font-size: 0.9rem; font-weight: 600; color: var(--charcoal); text-align: right; }
+
+    /* =====================================================
+       PHOTO GALLERY
+       ===================================================== */
+    .photos-section { background: var(--dark); }
+    .photos-section .section-title { color: white; }
+    .photos-section .section-label { color: var(--sunrise); }
+    .photos-section .section-body { color: rgba(255,255,255,0.55); }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.7rem;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 480px) {
+      .photo-gallery { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* Real photo style — use <img class="gallery-photo"> */
+    .gallery-photo {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      display: block;
+    }
+
+    .photo-placeholder {
+      aspect-ratio: 4/3;
+      background: rgba(255,255,255,0.04);
+      border: 1px dashed rgba(255,255,255,0.12);
+      border-radius: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      color: rgba(255,255,255,0.25);
+      font-size: 0.72rem;
+    }
+
+    .photo-placeholder .ph-icon { font-size: 1.4rem; }
+    .photo-cta-note { margin-top: 1.4rem; text-align: center; font-size: 0.82rem; color: rgba(255,255,255,0.35); font-style: italic; }
+
+    /* =====================================================
+       CONTACT
+       ===================================================== */
+    .contact-section {
+      background: linear-gradient(140deg, #c45c30 0%, #e07a5f 40%, #e8a060 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .contact-section .section-label { color: rgba(255,255,255,0.6); }
+    .contact-section .section-title { color: white; }
+    .contact-section .section-body  { color: rgba(255,255,255,0.78); }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: white;
+      color: var(--coral);
+      text-decoration: none;
+      padding: 1.1rem 2.5rem;
+      border-radius: 3rem;
+      font-weight: 800;
+      font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .contact-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(0,0,0,0.25); }
+
+    .contact-btn.outline {
+      background: rgba(255,255,255,0.14);
+      border: 1.5px solid rgba(255,255,255,0.4);
+      color: white;
+    }
+
+    .location-note { margin-top: 2rem; font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.35);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.73rem;
+    }
+
+    footer a { color: var(--seafoam); text-decoration: none; }
+
+    /* =====================================================
+       FLOATING CTA
+       ===================================================== */
+    .floating-cta {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background: var(--coral);
+      color: white;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 3rem;
+      font-weight: 700;
+      font-size: 0.92rem;
+      box-shadow: 0 4px 24px rgba(224,122,95,0.5);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.2s;
+    }
+
+    .floating-cta.visible { opacity: 1; pointer-events: all; }
+    .floating-cta:hover { transform: translateX(-50%) translateY(-2px); }
+
+    /* =====================================================
+       ANIMATIONS + REVEAL
+       ===================================================== */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.2; transform: scaleY(1); }
+      50%       { opacity: 0.6; transform: scaleY(1.4); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-badge">For Sale in Encinitas, CA</div>
+  <h1>2024 Mercedes<br><span>Sprinter AWD</span></h1>
+  <p class="hero-sub">Like-new adventure van with professional custom build. Ready for whatever you're planning next.</p>
+
+  <div class="hero-stats">
+    <div class="stat-pill">📅 <span>2024</span> Model Year</div>
+    <div class="stat-pill">🛣 <span>5,850</span> Miles</div>
+    <div class="stat-pill">🛏 Sleeps <span>4</span></div>
+    <div class="stat-pill">☀️ <span>400W</span> Solar</div>
+  </div>
+
+  <!-- ==========================================
+       UPDATE PRICE: change both places below
+       ========================================== -->
+  <div class="hero-price">
+    <div class="price-tag">$139,900</div>
+    <div class="price-note">Clean title in hand</div>
+  </div>
+
+  <div class="hero-ctas">
+    <a class="btn-primary" href="tel:4157450130">📞 Call / Text</a>
+    <a class="btn-secondary" href="https://vanlifetrader.com/listing/2024-mercedes-sprinter-awd-4f8367/" target="_blank">Full Listing</a>
+  </div>
+
+  <div class="scroll-hint">
+    Scroll to explore
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="adventure-strip">
+  <div class="strip-inner">
+    <span class="strip-item">🏔 Mountain Ready</span>
+    <span class="strip-item">🏄 Beach Life</span>
+    <span class="strip-item">💻 Remote Work</span>
+    <span class="strip-item">👨‍👩‍👧 Family Friendly</span>
+    <span class="strip-item">⚡ 400Ah Lithium</span>
+    <span class="strip-item">🔥 Diesel Heat</span>
+    <span class="strip-item">🌊 Encinitas, CA</span>
+    <span class="strip-item">🏔 Mountain Ready</span>
+    <span class="strip-item">🏄 Beach Life</span>
+    <span class="strip-item">💻 Remote Work</span>
+    <span class="strip-item">👨‍👩‍👧 Family Friendly</span>
+    <span class="strip-item">⚡ 400Ah Lithium</span>
+    <span class="strip-item">🔥 Diesel Heat</span>
+    <span class="strip-item">🌊 Encinitas, CA</span>
+  </div>
+</div>
+
+<!-- ===== QUICK STATS ===== -->
+<div class="quick-wins">
+  <div class="quick-wins-grid">
+    <div class="qw-item">
+      <div class="qw-icon">🛡</div>
+      <div class="qw-label">Condition</div>
+      <div class="qw-value">Like New</div>
+    </div>
+    <div class="qw-item">
+      <div class="qw-icon">⚙️</div>
+      <div class="qw-label">Drivetrain</div>
+      <div class="qw-value">AWD Diesel</div>
+    </div>
+    <div class="qw-item">
+      <div class="qw-icon">🔋</div>
+      <div class="qw-label">Power</div>
+      <div class="qw-value">3000W Inverter</div>
+    </div>
+    <div class="qw-item">
+      <div class="qw-icon">🌡</div>
+      <div class="qw-label">Climate</div>
+      <div class="qw-value">4-Season Ready</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STORY ===== -->
+<section class="about-section">
+  <div class="section-inner reveal">
+    <div class="section-label">The Story</div>
+    <h2 class="section-title">Built for the life you want to live.</h2>
+    <p class="section-body">
+      This van is set up to fit whatever lifestyle you're aiming for. From hitting the beach for surf trips or heading all the way up to ski at Mammoth, it's ready for weekend getaways, remote work, or family adventures. The heavy-duty, high-quality materials and modular floor plan make this a comfortable way to camp, play, or haul stuff without being locked into one permanent layout.
+    </p>
+
+    <div class="highlight-block">
+      <p>Selling due to an unforeseen change in life plans. This van is ready to go and deserves to be used. Prepare yourself for an epic year of adventures ahead.</p>
+      <div class="attribution">The owner</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features-section">
+  <div class="section-inner">
+    <div class="section-label reveal">Highlights</div>
+    <h2 class="section-title reveal">Everything done right.</h2>
+    <p class="section-body reveal">Professional custom build, not a kit. Every system was spec'd and installed properly.</p>
+
+    <div class="cards-grid">
+      <div class="feature-card reveal">
+        <div class="card-icon">🛏</div>
+        <div class="card-title">Sleeps 4 Comfortably</div>
+        <div class="card-body">Double-decker system with electric-lift upper bed and fold-out lower bunk. Flares extend the sleeping area. Fits the whole crew.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Serious Power System</div>
+        <div class="card-body">400Ah self-heating lithium battery, 400W solar, 3000W inverter, marine-grade wiring, Bluetooth monitoring. Off-grid for days.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="card-icon">🔥</div>
+        <div class="card-title">4-Season Capable</div>
+        <div class="card-body">European diesel space heater (high-altitude rated, silent pump), Havelock wool insulation, radiant barrier. Snow trips, no problem.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="card-icon">🍳</div>
+        <div class="card-title">Full Kitchen Setup</div>
+        <div class="card-body">Dual-zone 12V/110V fridge/freezer, 18-gallon fresh water, 7-gal gray. Completely self-contained and removable for max flexibility.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="card-icon">🪑</div>
+        <div class="card-title">Seating for 4</div>
+        <div class="card-body">Rotating heated captain's chairs + DOT-approved fold-away bench seat (child-seat compatible). Converts between modes in seconds.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="card-icon">🌈</div>
+        <div class="card-title">Beautiful Interior</div>
+        <div class="card-body">Clean wood-paneled ceiling with full-length color-changing LED lighting. Maxxair remote fan. Front privacy curtain. It's a vibe.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SYSTEMS ===== -->
+<section class="systems-section">
+  <div class="section-inner">
+    <div class="section-label reveal">Under the Hood</div>
+    <h2 class="section-title reveal">Every system, done properly.</h2>
+
+    <div class="systems-grid">
+      <div class="system-block reveal">
+        <h3>⚡ Electrical</h3>
+        <ul>
+          <li>400Ah self-heating lithium battery</li>
+          <li>400W rooftop solar</li>
+          <li>3000W inverter</li>
+          <li>Bluetooth system monitoring</li>
+          <li>Marine-grade wiring</li>
+          <li>110V + 12V outlets throughout</li>
+          <li>Shore power hookup</li>
+        </ul>
+      </div>
+      <div class="system-block reveal">
+        <h3>🌡 Climate</h3>
+        <ul>
+          <li>Diesel space heater (European, high-altitude)</li>
+          <li>Maxxair remote-controlled ceiling fan</li>
+          <li>Havelock wool insulation</li>
+          <li>Radiant barrier layer</li>
+          <li>Sliding screened windows x3</li>
+        </ul>
+      </div>
+      <div class="system-block reveal">
+        <h3>🍳 Kitchen</h3>
+        <ul>
+          <li>18-gallon fresh water tank</li>
+          <li>7-gallon gray water tank</li>
+          <li>Sink with pump</li>
+          <li>Dual-zone 12V/110V fridge/freezer</li>
+          <li>Unused cassette toilet included</li>
+          <li>Entire kitchen is removable</li>
+        </ul>
+      </div>
+      <div class="system-block reveal">
+        <h3>📦 Storage + Exterior</h3>
+        <ul>
+          <li>Backwoods Adventure Mods roof rack</li>
+          <li>Three storage cabinets</li>
+          <li>Over-wheel-well storage</li>
+          <li>Under-bed bins (14-gal capacity)</li>
+          <li>Heavy-duty headliner shelf</li>
+          <li>Tow hitch (5,000 lb capacity)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DRIVER ASSIST ===== -->
+<section class="assist-section">
+  <div class="section-inner">
+    <div class="section-label reveal">Factory Options</div>
+    <h2 class="section-title reveal">Loaded from the factory.</h2>
+    <p class="section-body reveal">This isn't a base Sprinter. It came loaded.</p>
+
+    <div class="assist-tags">
+      <span class="assist-tag reveal">🚗 Distronic Cruise Control</span>
+      <span class="assist-tag reveal">↔️ Lane Assist</span>
+      <span class="assist-tag reveal">🅿️ Parking Assist</span>
+      <span class="assist-tag reveal">📷 360° Cameras</span>
+      <span class="assist-tag reveal">👁 Blind Spot Assist</span>
+      <span class="assist-tag reveal">💨 Crosswind Assist</span>
+      <span class="assist-tag reveal">🔥 Heated Captain's Seats</span>
+      <span class="assist-tag reveal">⚡ Electric Seat Adjust</span>
+      <span class="assist-tag reveal">🔄 180° Rear Door Hinges</span>
+      <span class="assist-tag reveal">🎯 Leather Steering Wheel</span>
+      <span class="assist-tag reveal">🚛 9-Speed Automatic</span>
+      <span class="assist-tag reveal">🏔 AWD Drivetrain</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPECS ===== -->
+<section class="specs-section">
+  <div class="section-inner">
+    <div class="section-label reveal">By the Numbers</div>
+    <h2 class="section-title reveal">Full specs.</h2>
+
+    <div class="specs-list reveal">
+      <div class="spec-row"><span class="spec-key">Year / Make / Model</span><span class="spec-val">2024 Mercedes Sprinter 2500</span></div>
+      <!-- UPDATE MILEAGE HERE -->
+      <div class="spec-row"><span class="spec-key">Mileage</span><span class="spec-val">5,850 miles</span></div>
+      <div class="spec-row"><span class="spec-key">Drivetrain</span><span class="spec-val">AWD</span></div>
+      <div class="spec-row"><span class="spec-key">Engine</span><span class="spec-val">Diesel</span></div>
+      <div class="spec-row"><span class="spec-key">Transmission</span><span class="spec-val">9-Speed Automatic</span></div>
+      <div class="spec-row"><span class="spec-key">Wheelbase / Roof</span><span class="spec-val">144" / High Roof</span></div>
+      <div class="spec-row"><span class="spec-key">Seats / Sleeps</span><span class="spec-val">4 / 4</span></div>
+      <div class="spec-row"><span class="spec-key">Solar</span><span class="spec-val">400W</span></div>
+      <div class="spec-row"><span class="spec-key">Battery</span><span class="spec-val">400Ah Lithium (Self-Heating)</span></div>
+      <div class="spec-row"><span class="spec-key">Inverter</span><span class="spec-val">3000W</span></div>
+      <div class="spec-row"><span class="spec-key">Fresh Water</span><span class="spec-val">18 Gallons</span></div>
+      <div class="spec-row"><span class="spec-key">Title</span><span class="spec-val">Clean, In Hand</span></div>
+      <div class="spec-row"><span class="spec-key">Location</span><span class="spec-val">Encinitas, CA</span></div>
+      <!-- UPDATE PRICE HERE TOO -->
+      <div class="spec-row"><span class="spec-key">Asking Price</span><span class="spec-val" style="color: var(--coral); font-size: 1.05rem;">$139,900</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PHOTOS =====
+     HOW TO ADD REAL PHOTOS:
+     1. Create a folder called "photos" in the same folder as this file
+     2. Add your jpg files (e.g. exterior.jpg, bed.jpg, kitchen.jpg, etc.)
+     3. Replace each <div class="photo-placeholder"> block with:
+          <img src="photos/your-filename.jpg" class="gallery-photo" alt="Short description" />
+     4. Save and commit to GitHub — changes go live in ~30 seconds
+-->
+<section class="photos-section">
+  <div class="section-inner">
+    <div class="section-label reveal">Gallery</div>
+    <h2 class="section-title reveal">See it for yourself.</h2>
+    <p class="section-body reveal">Tap the listing link below for the full photo gallery.</p>
+
+    <div class="photo-gallery">
+      <!-- Replace these with <img> tags once you have photos -->
+      <div class="photo-placeholder reveal"><div class="ph-icon">📸</div><div>Exterior</div></div>
+      <div class="photo-placeholder reveal"><div class="ph-icon">🛏</div><div>Sleeping</div></div>
+      <div class="photo-placeholder reveal"><div class="ph-icon">🍳</div><div>Kitchen</div></div>
+      <div class="photo-placeholder reveal"><div class="ph-icon">🪑</div><div>Seating</div></div>
+      <div class="photo-placeholder reveal"><div class="ph-icon">⚡</div><div>Electrical</div></div>
+      <div class="photo-placeholder reveal"><div class="ph-icon">🏔</div><div>Adventure</div></div>
+    </div>
+
+    <p class="photo-cta-note reveal">More photos in the full listing below.</p>
+
+    <div style="text-align:center; margin-top: 2rem;" class="reveal">
+      <a href="https://vanlifetrader.com/listing/2024-mercedes-sprinter-awd-4f8367/"
+         target="_blank"
+         style="display:inline-block; background:rgba(255,255,255,0.08); border:1.5px solid rgba(255,255,255,0.2); color:white; text-decoration:none; padding:0.9rem 2rem; border-radius:3rem; font-weight:600; font-size:0.95rem;">
+        View Full Listing + Photos →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section">
+  <div class="section-inner">
+    <div class="section-label reveal">Ready to Talk?</div>
+    <h2 class="section-title reveal">Let's make it happen.</h2>
+    <p class="section-body reveal">
+      Van is in Encinitas, CA. Happy to do a video walkthrough for out-of-state buyers. Financing and secure transaction platforms welcome.
+    </p>
+
+    <div class="contact-methods reveal">
+      <a href="tel:4157450130" class="contact-btn">📞 415-745-0130</a>
+      <a href="sms:4157450130" class="contact-btn outline">💬 Send a Text</a>
+      <a href="https://vanlifetrader.com/listing/2024-mercedes-sprinter-awd-4f8367/" target="_blank" class="contact-btn outline">🔗 Full Listing</a>
+    </div>
+
+    <p class="location-note reveal">📍 Encinitas, CA · Clean Title In Hand · Serious Inquiries Welcome</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>2024 Mercedes Sprinter 2500 AWD · Encinitas, CA · $139,900</p>
+  <p style="margin-top:0.5rem;">Questions? Call or text <a href="tel:4157450130">415-745-0130</a></p>
+</footer>
+
+<!-- ===== FLOATING CALL BUTTON ===== -->
+<a href="tel:4157450130" class="floating-cta" id="floatCta">📞 415-745-0130</a>
+
+<script>
+  // Scroll-triggered reveal animation
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver(
+    entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
+    }),
+    { threshold: 0.1 }
+  );
+  reveals.forEach(el => revealObserver.observe(el));
+
+  // Floating CTA: appears once hero scrolls out of view
+  const floatCta = document.getElementById('floatCta');
+  const heroEl   = document.querySelector('.hero');
+  const heroObserver = new IntersectionObserver(
+    entries => floatCta.classList.toggle('visible', !entries[0].isIntersecting),
+    { threshold: 0.1 }
+  );
+  heroObserver.observe(heroEl);
+</script>
+</body>
+</html>
