@@ -40,14 +40,18 @@
        ===================================================== */
     .hero {
       min-height: 100svh;
-      background: linear-gradient(160deg,
-        #071828 0%,
-        #0b2e45 30%,
-        #124a6a 55%,
-        #1a7070 75%,
-        #c45c30 92%,
-        #e88a3a 100%
-      );
+      background-image:
+        linear-gradient(160deg,
+          rgba(7,24,40,0.55) 0%,
+          rgba(11,46,69,0.5) 30%,
+          rgba(18,74,106,0.45) 55%,
+          rgba(26,112,112,0.45) 75%,
+          rgba(196,92,48,0.5) 92%,
+          rgba(232,138,58,0.55) 100%
+        ),
+        url('photos/beachbg.jpg');
+      background-size: cover;
+      background-position: center;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -744,7 +748,7 @@
       <div class="feature-card reveal">
         <div class="card-icon">🛏</div>
         <div class="card-title">Sleeps 4 Comfortably</div>
-        <div class="card-body">Double-decker system with electric-lift upper bed and fold-out lower bunk. Flares extend the sleeping area. Fits the whole crew.</div>
+        <div class="card-body">Double-decker system with electric-lift upper bed and fold-out lower bunk. Flares extend the upper sleeping area. Fits the whole crew.</div>
       </div>
       <div class="feature-card reveal">
         <div class="card-icon">⚡</div>
@@ -758,8 +762,8 @@
       </div>
       <div class="feature-card reveal">
         <div class="card-icon">🍳</div>
-        <div class="card-title">Full Kitchen Setup</div>
-        <div class="card-body">Dual-zone 12V/110V fridge/freezer, 18-gallon fresh water, 7-gal gray. Completely self-contained and removable for max flexibility.</div>
+        <div class="card-title">Modular Kitchen Setup</div>
+        <div class="card-body">Dual-zone 12V/110V fridge/freezer, 18-gallon fresh water plumbed to sink, 7-gal gray water. Self-contained and removable for max flexibility.</div>
       </div>
       <div class="feature-card reveal">
         <div class="card-icon">🪑</div>
@@ -769,7 +773,7 @@
       <div class="feature-card reveal">
         <div class="card-icon">🌈</div>
         <div class="card-title">Beautiful Interior</div>
-        <div class="card-body">Clean wood-paneled ceiling with full-length color-changing LED lighting. Maxxair remote fan. Front privacy curtain. It's a vibe.</div>
+        <div class="card-body">Clean wood-paneled ceiling with full-length color-changing LED lighting. Maxxair remote fan. Front privacy curtain for all your vibes.</div>
       </div>
     </div>
   </div>
@@ -809,7 +813,7 @@
         <ul>
           <li>18-gallon fresh water tank</li>
           <li>7-gallon gray water tank</li>
-          <li>Sink with pump</li>
+          <li>Sink with plumbed pump to faucet</li>
           <li>Dual-zone 12V/110V fridge/freezer</li>
           <li>Unused cassette toilet included</li>
           <li>Entire kitchen is removable</li>
@@ -897,12 +901,12 @@
 
     <div class="photo-gallery">
       <!-- Replace these with <img> tags once you have photos -->
-      <div class="photo-placeholder reveal"><div class="ph-icon">📸</div><div>Exterior</div></div>
-      <div class="photo-placeholder reveal"><div class="ph-icon">🛏</div><div>Sleeping</div></div>
-      <div class="photo-placeholder reveal"><div class="ph-icon">🍳</div><div>Kitchen</div></div>
-      <div class="photo-placeholder reveal"><div class="ph-icon">🪑</div><div>Seating</div></div>
-      <div class="photo-placeholder reveal"><div class="ph-icon">⚡</div><div>Electrical</div></div>
-      <div class="photo-placeholder reveal"><div class="ph-icon">🏔</div><div>Adventure</div></div>
+      <img src="photos/exterior.jpg" class="gallery-photo reveal" alt="Exterior of van" />
+      <img src="photos/sleeping.jpg" class="gallery-photo reveal" alt="Sleeping bunks" />
+      <img src="photos/greenlights.jpg" class="gallery-photo reveal" alt="Lights and kitchen" />
+      <img src="photos/dining.jpg" class="gallery-photo reveal" alt="Front work and dining area" />
+      <img src="photos/table.jpg" class="gallery-photo reveal" alt="Back work and dining area" />
+      <img src="photos/storage.jpg" class="gallery-photo reveal" alt="Storage area" />
     </div>
 
     <p class="photo-cta-note reveal">More photos in the full listing below.</p>
